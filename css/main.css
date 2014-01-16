@@ -1,0 +1,115 @@
+/*  All CSS codes for each section of the excercise are listed in sections,
+	seperated by comments.
+	To make the execute the CSS per section of the excercise, comment out 
+	the other section of CSS codes at the top the section.*/
+
+/*
+	1. Adjust the position of the .primary and .secondary elements so that they are right on top of each other
+*/
+
+
+.secondary {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+
+
+/*
+	2. Using opacity, adjust the CSS so that only .primary is visible
+*/
+
+
+/*
+
+.primary {
+	opacity: 1;
+}
+
+.secondary {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+
+
+/*
+	3. On hover, hide .primary and show .secondary
+*/
+
+
+.position-item {
+	position: relative;
+}
+
+.primary {
+	opacity: 1;
+}
+
+.secondary {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+
+.portfolio-item:hover
+
+.primary{
+	opacity: 0;
+}
+
+
+/*
+	4. Set up a transition so that you have a smooth crossfade on hover
+*/
+
+
+.primary {
+	opacity: 1;
+	transition: opacity 1s ease-in;
+}
+
+.secondary {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+
+.portfolio-item:hover
+
+.primary{
+	opacity: 0;
+}
+
+
+/*
+	5. Switch your portfolio to use 3d rotations to produce a card-flip effect
+*/
+
+
+.secondary {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index:-1;
+}
+
+.primary, .secondary {
+	transition: all 1s ease-in;
+}
+
+.secondary {
+	-webkit-transform: rotateY(-180deg);
+}
+
+.portfolio-item:hover .secondary {
+	-webkit-transform: rotateY(0deg);
+}
+
+.portfolio-item:hover .primary {
+	-webkit-transform: rotateY(180deg);
+}
